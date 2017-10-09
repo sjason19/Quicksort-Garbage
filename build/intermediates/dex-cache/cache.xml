@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6262416848bcaf63a9e0fff9d0a6b6f9b680826f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8c08bb590a49934827659979db76dd6c4b6cfc51">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c141474374e6e7c282e2d4acf6ea4bf8a0f0797e/classes.dex" />
+    </item>
+
+</items>

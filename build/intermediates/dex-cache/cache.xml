@@ -2,6 +2,96 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/cbd154b7f8ffb823062a4b4cccb3183ca6ddfa1c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_ae3db6563b38ab3dd741e3c3b17aa6e9b31dd6fa.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e0fc9f11464e0a7c1ce0a233f76869bb3877af92">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c141474374e6e7c282e2d4acf6ea4bf8a0f0797e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/4c3c5945168e660fd14eb89f182d42be50e9951f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_31d1d1e27e81abe417ada41c9702f0d1402413de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/9e5e3a0d2842e8f661124efc1fd92f5132e27f14/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_20281ca45bb893266b5f6a32fd198d972551e5e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/gson-2.7_64299be845eb62be5c0b0e938b92150de07ee4a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_80a1292e0cff9d3e3e1c2d0bc31fa4b3e125bea2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_a1b4fa3277de77a30c8aa3b6fa00097d31235e26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/6f5e0eabf545ce280bf3a18c630f29c8d90659d4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_0d12f04f3008e586ea64d1a1e46b9445a1937b02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/58459173a1c3f553e41e6fe694cf0394ce1dd4d3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_1e3a473eca1685c2b45fd0490617e7b743b7d53c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/b9539af1e12fa15839ccab7d0d5c38f675ed202c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_0dfd76d247497fda146cde53568f6f709daee07d.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
@@ -11,13 +101,94 @@
         <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6262416848bcaf63a9e0fff9d0a6b6f9b680826f/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/jason/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="394c4ab624e920421cfa2ec337a2c02eb2e829a5">
-        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c141474374e6e7c282e2d4acf6ea4bf8a0f0797e/classes.dex" />
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_5529a22287f377d458fe5314b1f5154a6c009269.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/a3c4fca1856a6855ac56b793d575c77b3d740fa6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_e174dd1f590bc848d91bf93f9274145ecb5430d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/okio-1.9.0_8e52394bfd07f6510b6c51b76f9bd5bf768cfc2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/3137a60d1274037fa3c20604eda9bfa30f2fa902/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_e153a354e67670de2f37ba1b3b627c28e1234d9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/ef32546f070dfdae067ff877d7ee93857cdb1557/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_0229ab62c11423bc024ac6675da3e341a7c1f263.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/5f05833a39954e9cfb1b20e779e23c024cf8db9f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_868b4924043573df7949662c416d045ad3ae9cd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.clarifai.clarifai-api2/core/2.3.0/e06ef8f1459025a84d3945bac808d1a5ddadf576/core-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e06ef8f1459025a84d3945bac808d1a5ddadf576">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/core-2.3.0_99b3d5056c663837418c1f3df05b0f7b1f012e2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/c64b82bf76fdc8c12a28ca8573c4b3ba2a7cc3ee/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_c5a1e52fa589ed818b4031e292bfae8cf2a98c79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/af7ed1f0ef195a533b8de4d969228c09f99b6828/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_b647cc5e22dbf0a1806e1396173601419f223731.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/664c771b7f3c670fa76dc23a6b081769bdeba577/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/jason/Documents/GitHub/Quicksort-Garbage/app/build/intermediates/pre-dexed/debug/classes_c6ef3a840c76e81578b78b5c92221a28572dd006.jar" />
     </item>
 
 </items>

@@ -12,6 +12,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -25,10 +26,7 @@
         </activity>
         <activity android:name=".Organic" />
         <activity android:name=".Garbage" />
-        <activity
-            android:name=".Recycle"
-            android:label="@string/title_activity_recycle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Recycle"></activity>
     </application>
 
 </manifest>

@@ -103,24 +103,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private class UIThreadImpl extends AsyncTask {
-        protected Object doInBackground(Object... arg0) {
+    private class UIThreadImpl extends AsyncTask<Intent, Void, Intent> {
+        @Override
+        protected Intent doInBackground(Intent... intents) {
+            return getGarbageCategory(resultList);
+        }
 
-            String imageSelector = getGarbageCategory(resultList);
-            Drawable d;
-            switch (imageSelector) {
-                case GARBAGE:
-                    d = getDrawable(R.drawable.trashcan);
-                case RECYCLING:
-                    d = getDrawable(R.drawable.recycling);
-                case COMPOST:
-                    d = getDrawable(R.drawable.compost);
-            }
-            return null;
+        @Override
+        protected void onPostExecute(Intent result) {
+            startActivity(result);
         }
     }
 
-    public String getGarbageCategory(ArrayList<String> confidenceTags) {
+    public Intent getGarbageCategory(ArrayList<String> confidenceTags) {
         for (int i = 0; i < 10; i++) {
             if (confidenceTags.get(i).equals("food") ||
                     confidenceTags.get(i).equals("fruit") ||
@@ -128,7 +123,8 @@ public class MainActivity extends AppCompatActivity {
                     confidenceTags.get(i).equals("grains"))
             {
                 localImage.setImageResource(R.drawable.compost);
-                return COMPOST;
+                Intent myIntent = new Intent(this, Organic.class);
+                return myIntent;
             }
             else if (confidenceTags.get(i).equals("paper") ||
                     confidenceTags.get(i).equals("metal") ||
@@ -137,10 +133,12 @@ public class MainActivity extends AppCompatActivity {
                     confidenceTags.get(i).equals("bottle"))
             {
                 localImage.setImageResource(R.drawable.recycling);
-                return RECYCLING;
+                Intent myIntent = new Intent(this, Recycle.class);
+                return myIntent;
             }
         }
-        localImage.setImageResource(R.drawable.trashcan);
-        return GARBAGE;
+            localImage.setImageResource(R.drawable.trashcan);
+            Intent myIntent = new Intent(this, Garbage.class);
+            return myIntent;
     }
 }

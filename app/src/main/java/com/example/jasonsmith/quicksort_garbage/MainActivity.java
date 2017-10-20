@@ -3,6 +3,7 @@ package com.example.jasonsmith.quicksort_garbage;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,22 +23,20 @@ import clarifai2.api.ClarifaiResponse;
 import clarifai2.api.request.ClarifaiRequest;
 import clarifai2.dto.input.ClarifaiInput;
 import clarifai2.dto.model.Model;
+import clarifai2.dto.model.output.ClarifaiOutput;
+import clarifai2.dto.prediction.Concept;
 public class MainActivity extends AppCompatActivity {
 
     ClarifaiClient client;
     Button sortIt;
     ImageView localImage;
     Thread UIThreadImpl;
-    ArrayList<String> list = new ArrayList<String>() {{
-        add("food");
-        add("vegetables");
-        add("fruit");
-    }};
+
 
     // Make this static because we only want a single instance of tags per photo
-    static ArrayList<String> confidenceTags;
+    ArrayList<String> resultList = new ArrayList<String>();
 
-    private static final int REQUEST_TIME = 1000;
+    private static final int REQUEST_TIME = 1313;
 
     private static final String COMPOST = "compost";
     private static final String RECYCLING = "recycling";
@@ -88,40 +87,28 @@ public class MainActivity extends AppCompatActivity {
             bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
             byte[] byteArray = stream.toByteArray();
 
-            ClarifaiResponse response = client.getDefaultModels().generalModel().predict()
-                    .withInputs(ClarifaiInput.forImage(byteArray)).executeSync();
+            List<ClarifaiOutput<Concept>> predictionResults = client.getDefaultModels().generalModel().predict().withInputs(ClarifaiInput.forImage(byteArray)).executeSync().get();
+            for(int i = 0; i < predictionResults.size(); i++) {
+                ClarifaiOutput<Concept> clarifaiOutput = predictionResults.get(i);
+
+                List<Concept> concepts = clarifaiOutput.data();
+
+                if(concepts != null && concepts.size() > 0) {
+                    for(int j = 0; j < concepts.size(); j++) {
+                        resultList.add(concepts.get(j).name());
+                    }
+                }
+            }
             return null;
         }
     }
 
-
-    public String getGarbageCategory(ArrayList<String> confidenceTags) {
-        for (int i = 0; i < 3; i++) {
-            if (confidenceTags.get(i).equals("food") ||
-                    confidenceTags.get(i).equals("fruit") ||
-                    confidenceTags.get(i).equals("vegetables") ||
-                    confidenceTags.get(i).equals("grains")) {
-                localImage.setImageResource(R.drawable.compost);
-                return COMPOST;
-            } else if (confidenceTags.get(i).equals("paper") ||
-                    confidenceTags.get(i).equals("metal") ||
-                    confidenceTags.get(i).equals("glass") ||
-                    confidenceTags.get(i).equals("plastic") ||
-                    confidenceTags.get(i).equals("bottle")) {
-                localImage.setImageResource(R.drawable.recycling);
-                return RECYCLING;
-            }
-        }
-        localImage.setImageResource(R.drawable.trashcan);
-        return GARBAGE;
-    }
-
     private class UIThreadImpl extends AsyncTask {
         protected Object doInBackground(Object... arg0) {
-            String imageSelector = getGarbageCategory(tagNames);
+
+            String imageSelector = getGarbageCategory(resultList);
             Drawable d;
-            String url = "";
-            switch (GARBAGE) {
+            switch (imageSelector) {
                 case GARBAGE:
                     d = getDrawable(R.drawable.trashcan);
                 case RECYCLING:
@@ -131,5 +118,29 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+
+    public String getGarbageCategory(ArrayList<String> confidenceTags) {
+        for (int i = 0; i < 10; i++) {
+            if (confidenceTags.get(i).equals("food") ||
+                    confidenceTags.get(i).equals("fruit") ||
+                    confidenceTags.get(i).equals("vegetables") ||
+                    confidenceTags.get(i).equals("grains"))
+            {
+                localImage.setImageResource(R.drawable.compost);
+                return COMPOST;
+            }
+            else if (confidenceTags.get(i).equals("paper") ||
+                    confidenceTags.get(i).equals("metal") ||
+                    confidenceTags.get(i).equals("glass") ||
+                    confidenceTags.get(i).equals("plastic") ||
+                    confidenceTags.get(i).equals("bottle"))
+            {
+                localImage.setImageResource(R.drawable.recycling);
+                return RECYCLING;
+            }
+        }
+        localImage.setImageResource(R.drawable.trashcan);
+        return GARBAGE;
     }
 }
